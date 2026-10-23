@@ -47,6 +47,12 @@ The CLI plans locally with no spend; its real provider adapter is disabled. `jso
 
 The supplied run report records three Hold the Line pilots generated and exported on 2026-10-23. Only first frames were checked; **motion, dialogue and lip-sync rubric QA are unfinished**. This repository publication did not rerun generation or inspect those output videos. Output videos are not bundled.
 
-The exact model label and credit cost were not visible in the reported UI. The default prompt deliberately stops for clarification when these required gates cannot be verified. Prompt constraints do not guarantee stable identities, props or voices.
+The exact model label and credit cost were not visible in the reported UI. The default prompt records a hidden vendor model as unknown and uses the live workflow. Exact-model requests still pause generation if unverified. Hidden prices require explicit bounded operation-count approval; they are never treated as free. Prompt constraints do not guarantee stable identities, props or voices.
 
 Example projects are templates: previous approvals do not authorize new generations. Reconfirm references, model, costs and approvals for each run. Keep private media, credentials and signed download links out of Git. Leave public-gallery sharing off unless separately requested.
+
+## Browser startup (v0.3)
+
+In ChatGPT, select the connected Chrome capability (`@Chrome`) when you want to use your own browser. The prompt cannot add a missing browser tool. It distinguishes connection failure, a site login page, and hidden model metadata; it continues drafting while access is repaired. Sign in to VideoExpress in the bound tab, then say “Resume the live form audit.”
+
+[Official OpenAI browser setup guidance](https://developers.openai.com/training/walkthroughs/using-your-computer-and-browser). See [browser regression report](docs/browser-regression.md) for what was and was not tested.

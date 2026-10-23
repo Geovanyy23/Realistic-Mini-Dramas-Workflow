@@ -187,7 +187,10 @@ def generation_blockers(project: dict, characters: list, shot: dict, approvals: 
     """Reasons a shot may NOT be sent to a real provider. Empty list == allowed."""
     b = []
     ml = project["model_label"]
-    if not ml["identity_verified"] or not ml["observed"]:
+    policy = ml.get("selection_policy", "exact_model")
+    if policy not in {"exact_model", "live_default"}:
+        b.append("invalid model selection policy")
+    if policy != "live_default" and (not ml["identity_verified"] or not ml["observed"]):
         b.append(f"model identity unverified (requested {ml['requested']!r}, observed {ml['observed']!r})")
     if project["capability_evidence"]["status"] != "audited":
         b.append(f"capability audit status is {project['capability_evidence']['status']!r}, needs 'audited'")

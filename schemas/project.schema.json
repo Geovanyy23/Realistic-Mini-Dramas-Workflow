@@ -102,6 +102,15 @@
               "type": "null"
             }
           ]
+        },
+        "selection_policy": {
+          "type": "string",
+          "enum": [
+            "exact_model",
+            "live_default"
+          ],
+          "default": "exact_model",
+          "description": "Omitted preserves strict legacy behavior. live_default uses the audited VideoExpress workflow without asserting hidden vendor model identity."
         }
       }
     },
