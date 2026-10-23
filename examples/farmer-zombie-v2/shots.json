@@ -1,0 +1,520 @@
+[
+  {
+    "id": "S010",
+    "ordinal": 1,
+    "framing": "tall vertical wide of the kitchen table, all three seated",
+    "camera_motion": "locked",
+    "character_ids": [
+      "DALE",
+      "JUNE",
+      "ROSA"
+    ],
+    "screen_positions": {
+      "DALE": "left",
+      "JUNE": "right",
+      "ROSA": "center"
+    },
+    "eyelines": {
+      "DALE": "down",
+      "JUNE": "down",
+      "ROSA": "down"
+    },
+    "start_state": "Evening. Dinner on the table, lantern lit. Dale left, June right, Rosa centre, radio on the table.",
+    "end_state": "Same; Rosa looks up at the radio.",
+    "action": "Rosa pauses mid-bite and looks at the radio.",
+    "dialogue": [
+      {
+        "speaker": "ROSA",
+        "text": "Dad, listen.",
+        "tone": "quiet, uneasy",
+        "pause_after": "everyone stills"
+      }
+    ],
+    "audio_continuity": "warm kitchen hum; radio static begins and carries into S020",
+    "prop_state": {
+      "LANTERN01": {
+        "holder": "JUNE",
+        "count_visible": 1
+      },
+      "RADIO01": {
+        "holder": "JUNE",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 5,
+      "max": 5
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-dale-front",
+      "ref-june-front",
+      "ref-rosa-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S020",
+    "ordinal": 2,
+    "framing": "vertical medium close-up of June at the window, full-height window behind her",
+    "camera_motion": "locked",
+    "character_ids": [
+      "JUNE"
+    ],
+    "screen_positions": {
+      "JUNE": "right",
+      "DALE": "offscreen"
+    },
+    "eyelines": {
+      "JUNE": "camera"
+    },
+    "start_state": "June stands at the window, radio in hand, dusk field behind her with distant figures.",
+    "end_state": "Her face hardens; she lowers the radio.",
+    "action": "She looks past the camera out the window; her face hardens.",
+    "dialogue": [
+      {
+        "speaker": "JUNE",
+        "text": "They're coming up the road.",
+        "tone": "flat, fast",
+        "pause_after": "none"
+      }
+    ],
+    "audio_continuity": "radio voice cuts to static; wind rises; faint moaning begins",
+    "prop_state": {
+      "RADIO01": {
+        "holder": "JUNE",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S010"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 5,
+      "max": 5
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-june-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S030",
+    "ordinal": 3,
+    "framing": "vertical medium of Dale at the full-height front door, hammer and plank",
+    "camera_motion": "locked",
+    "character_ids": [
+      "DALE"
+    ],
+    "screen_positions": {
+      "DALE": "left",
+      "JUNE": "offscreen"
+    },
+    "eyelines": {
+      "DALE": "right"
+    },
+    "start_state": "Dale braces a plank across the door, hammer raised.",
+    "end_state": "Plank nailed; he grabs the next.",
+    "action": "He drives nails fast, three hard strikes, then snatches the next plank.",
+    "dialogue": [
+      {
+        "speaker": "DALE",
+        "text": "Rosa, the lantern. Now.",
+        "tone": "barked, urgent",
+        "pause_after": "none"
+      }
+    ],
+    "audio_continuity": "hammer strikes over wind and rising moaning; a thump on the door",
+    "prop_state": {
+      "BOARD01": {
+        "holder": "DALE",
+        "count_visible": 3
+      },
+      "HAMMER01": {
+        "holder": "DALE",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S020"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 5,
+      "max": 5
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-dale-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S040",
+    "ordinal": 4,
+    "framing": "vertical close-up of Rosa, window shattering behind her",
+    "camera_motion": "locked",
+    "character_ids": [
+      "ROSA"
+    ],
+    "screen_positions": {
+      "ROSA": "center"
+    },
+    "eyelines": {
+      "ROSA": "camera"
+    },
+    "start_state": "Rosa at the table holding the lantern, window behind her intact.",
+    "end_state": "Glass bursts inward; she screams and ducks.",
+    "action": "The window behind her bursts inward; she screams and drops low, lantern swinging.",
+    "dialogue": [
+      {
+        "speaker": "ROSA",
+        "text": "Dad!",
+        "tone": "scream",
+        "pause_after": "none"
+      }
+    ],
+    "audio_continuity": "glass shatters, moaning loud, lantern clatter",
+    "prop_state": {
+      "LANTERN01": {
+        "holder": "ROSA",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S030"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 5,
+      "max": 5
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-rosa-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S050",
+    "ordinal": 5,
+    "framing": "vertical medium two-shot: Dale left swinging the shotgun butt at the window, June right pulling Rosa toward the door",
+    "camera_motion": "locked",
+    "character_ids": [
+      "DALE",
+      "JUNE",
+      "ROSA"
+    ],
+    "screen_positions": {
+      "DALE": "left",
+      "JUNE": "right",
+      "ROSA": "center"
+    },
+    "eyelines": {
+      "DALE": "right",
+      "JUNE": "left",
+      "ROSA": "left"
+    },
+    "start_state": "Figures reaching through the broken window; Dale swings the shotgun butt; June grips Rosa's arm.",
+    "end_state": "Dale drives the figures back; June and Rosa reach the door.",
+    "action": "Dale slams the shotgun butt into the window frame twice; June hauls Rosa toward the door.",
+    "dialogue": [
+      {
+        "speaker": "JUNE",
+        "text": "Truck. Go!",
+        "tone": "shouted",
+        "pause_after": "none"
+      }
+    ],
+    "audio_continuity": "impacts, moaning, boots on floorboards, wind",
+    "prop_state": {
+      "SHOTGUN01": {
+        "holder": "DALE",
+        "count_visible": 1
+      },
+      "LANTERN01": {
+        "holder": "ROSA",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S040"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 5,
+      "max": 5
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-dale-front",
+      "ref-june-front",
+      "ref-rosa-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S060",
+    "ordinal": 6,
+    "framing": "vertical close-up of Dale in the truck cab, key in the ignition",
+    "camera_motion": "locked",
+    "character_ids": [
+      "DALE"
+    ],
+    "screen_positions": {
+      "DALE": "left",
+      "JUNE": "offscreen",
+      "ROSA": "offscreen"
+    },
+    "eyelines": {
+      "DALE": "down"
+    },
+    "start_state": "Night. Dale in the driver seat, June and Rosa out of frame, figures approaching in the mirror.",
+    "end_state": "Engine fails twice; his jaw clenches.",
+    "action": "He turns the key: the engine coughs and dies, again. He slams the wheel.",
+    "dialogue": [
+      {
+        "speaker": "DALE",
+        "text": "Come on. Come on.",
+        "tone": "through gritted teeth",
+        "pause_after": "none"
+      }
+    ],
+    "audio_continuity": "starter grinding, moaning closer, hands pounding on the truck bed",
+    "prop_state": {
+      "TRUCK01": {
+        "holder": "DALE",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S050"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 5,
+      "max": 5
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-dale-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S070",
+    "ordinal": 7,
+    "framing": "vertical wide from behind the truck: headlights blasting the yard full of figures",
+    "camera_motion": "locked",
+    "character_ids": [
+      "DALE"
+    ],
+    "screen_positions": {
+      "DALE": "offscreen"
+    },
+    "eyelines": {
+      "DALE": "offscreen_right"
+    },
+    "start_state": "Dark yard, figures crowding toward the dark truck.",
+    "end_state": "Engine roars, headlights flood the figures, truck lurches forward.",
+    "action": "The engine catches with a roar; headlights blaze across the figures, which stagger back; the truck lunges forward through the gap.",
+    "dialogue": [],
+    "audio_continuity": "engine roar, tires on dirt, figures scattering, moaning fading",
+    "prop_state": {
+      "TRUCK01": {
+        "holder": "DALE",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S060"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 5,
+      "max": 5
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-dale-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S080",
+    "ordinal": 8,
+    "framing": "vertical medium close-up of June in the passenger seat, orange firelight on her face",
+    "camera_motion": "locked",
+    "character_ids": [
+      "JUNE"
+    ],
+    "screen_positions": {
+      "JUNE": "right",
+      "DALE": "offscreen"
+    },
+    "eyelines": {
+      "JUNE": "left"
+    },
+    "start_state": "June in the cab looking back toward the barn; it's on fire behind the house.",
+    "end_state": "She turns to Dale, hand on his arm, shaken.",
+    "action": "Looking off-screen left toward Dale, she grips his arm as the barn burns in the rear window; the truck slows hard.",
+    "dialogue": [
+      {
+        "speaker": "JUNE",
+        "text": "Dale. The barn.",
+        "tone": "breathless, horrified",
+        "pause_after": "none"
+      }
+    ],
+    "audio_continuity": "fire crackle, engine idling, wind",
+    "prop_state": {
+      "TRUCK01": {
+        "holder": "DALE",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S070"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 5,
+      "max": 5
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-june-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S090",
+    "ordinal": 9,
+    "framing": "vertical wide: truck stopped on a ridge at dawn, three figures standing beside it",
+    "camera_motion": "locked",
+    "character_ids": [
+      "DALE",
+      "JUNE",
+      "ROSA"
+    ],
+    "screen_positions": {
+      "DALE": "left",
+      "JUNE": "right",
+      "ROSA": "center"
+    },
+    "eyelines": {
+      "DALE": "right",
+      "JUNE": "left",
+      "ROSA": "down"
+    },
+    "start_state": "Dawn. Truck on a ridge, smoke on the horizon. Dale left with a bandaged right hand, Rosa centre, June right.",
+    "end_state": "June leans into Dale; all three still.",
+    "action": "June leans against Dale and looks at him.",
+    "dialogue": [
+      {
+        "speaker": "JUNE",
+        "text": "We held.",
+        "tone": "exhausted, quiet relief",
+        "pause_after": "long beat"
+      }
+    ],
+    "audio_continuity": "birds, wind, distant crackle; moaning gone",
+    "prop_state": {
+      "TRUCK01": {
+        "holder": "DALE",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S080"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 5,
+      "max": 5
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-dale-front",
+      "ref-june-front",
+      "ref-rosa-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  }
+]

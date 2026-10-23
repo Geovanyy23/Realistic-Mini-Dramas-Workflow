@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "project.schema.json",
+  "title": "Project",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "contract_version",
+    "owner",
+    "aspect_ratio",
+    "intended_duration_s",
+    "provider",
+    "model_label",
+    "capability_evidence",
+    "budget_approved",
+    "content_rights"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]{3,64}$"
+    },
+    "contract_version": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string"
+    },
+    "aspect_ratio": {
+      "type": "string",
+      "enum": [
+        "16:9",
+        "9:16",
+        "1:1"
+      ]
+    },
+    "intended_duration_s": {
+      "type": "object",
+      "required": [
+        "min",
+        "max"
+      ],
+      "properties": {
+        "min": {
+          "type": "number",
+          "minimum": 1
+        },
+        "max": {
+          "type": "number",
+          "minimum": 1
+        }
+      }
+    },
+    "provider": {
+      "type": "string",
+      "enum": [
+        "videoexpress",
+        "api",
+        "local",
+        "fake"
+      ]
+    },
+    "model_label": {
+      "type": "object",
+      "required": [
+        "requested",
+        "observed",
+        "identity_verified"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "requested": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observed": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "identity_verified": {
+          "type": "boolean"
+        },
+        "evidence_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "capability_evidence": {
+      "type": "object",
+      "required": [
+        "status",
+        "audited_at",
+        "report_path"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "not_audited",
+            "blocked_tool",
+            "blocked_auth",
+            "audited"
+          ]
+        },
+        "audited_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "report_path": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "budget_approved": {
+      "type": "object",
+      "required": [
+        "approved",
+        "approval_id",
+        "max_attempts_per_shot",
+        "max_concurrent_jobs"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "approved": {
+          "type": "boolean"
+        },
+        "approval_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "max_attempts_per_shot": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "max_concurrent_jobs": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1
+        },
+        "spend_ceiling_note": {
+          "type": "string"
+        }
+      }
+    },
+    "content_rights": {
+      "type": "object",
+      "required": [
+        "original_story",
+        "no_real_person_likeness",
+        "no_cloned_voice",
+        "reference_rights_cleared"
+      ],
+      "properties": {
+        "original_story": {
+          "const": true
+        },
+        "no_real_person_likeness": {
+          "const": true
+        },
+        "no_cloned_voice": {
+          "const": true
+        },
+        "reference_rights_cleared": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

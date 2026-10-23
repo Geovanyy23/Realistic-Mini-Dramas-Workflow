@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Mini Dramas</title>
+<style>
+  :root{--bg:#0b0a12;--ink:#f5efe6;--amber:#ffb347;--ember:#ff5a36;--cool:#4fb3ff;}
+  html,body{margin:0;background:var(--bg);height:100%;overflow:hidden}
+  canvas{display:block;width:100vw;height:100vh}
+</style>
+</head>
+<body>
+<canvas id="c" width="1200" height="630"></canvas>
+<script>
+// Abstract "AI Mini Dramas" hook: a drifting strip of story frames, a lantern pulse,
+// and a tension line that spikes like an emotional arc. Deterministic: pass ?t=seconds
+// to render a specific moment (used for PNG/GIF capture).
+const cv=document.getElementById('c'),ctx=cv.getContext('2d');
+const W=cv.width,H=cv.height;
+const qs=new URLSearchParams(location.search);
+const fixedT=qs.has('t')?parseFloat(qs.get('t')):null;
+const TITLE=qs.get('title')||'REALISTIC MINI DRAMAS';
+const SUB=qs.get('sub')||'one night · nine shots · 45 seconds';
+function rnd(i){const x=Math.sin(i*127.1+311.7)*43758.5453;return x-Math.floor(x);}
+const frames=[];for(let i=0;i<14;i++)frames.push({w:150+rnd(i)*60,h:84+rnd(i+9)*40,hue:[28,20,205,38,12,210][i%6],ph:rnd(i+3)*6.28});
+function arcY(x){ // emotional arc: calm → dread → spikes → climax → relief
+  const u=x/W; const base=Math.sin(u*Math.PI)*0.35;
+  const spikes=Math.max(0,Math.sin(u*31)*Math.sin(u*7))*Math.min(1,u*2.2)*(1-Math.pow(u,6));
+  return base+spikes*0.55;
+}
+function draw(t){
+  ctx.clearRect(0,0,W,H);
+  // background vignette
+  const g=ctx.createRadialGradient(W*0.55,H*0.45,40,W*0.5,H*0.5,W*0.75);
+  g.addColorStop(0,'#1a1426');g.addColorStop(1,'#07060c');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+  // lantern pulse
+  const pulse=0.75+0.25*Math.sin(t*2.1);
+  const lg=ctx.createRadialGradient(W*0.72,H*0.42,0,W*0.72,H*0.42,260*pulse);
+  lg.addColorStop(0,'rgba(255,179,71,0.55)');lg.addColorStop(0.5,'rgba(255,90,54,0.18)');lg.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=lg;ctx.fillRect(0,0,W,H);
+  // drifting film strip
+  ctx.save();ctx.translate(0,H*0.56);ctx.rotate(-0.07);
+  const speed=38;let x=-((t*speed)%260)-200;
+  ctx.fillStyle='rgba(0,0,0,0.55)';ctx.fillRect(-200,-90,W+500,180);
+  for(let i=0;i<16;i++){const f=frames[i%frames.length];const fx=x+i*260;
+    const glow=0.5+0.5*Math.sin(t*1.7+f.ph);
+    ctx.fillStyle=`hsla(${f.hue},70%,${18+glow*14}%,1)`;ctx.fillRect(fx,-f.h/2,f.w,f.h);
+    const fg=ctx.createLinearGradient(fx,-f.h/2,fx+f.w,f.h/2);fg.addColorStop(0,`hsla(${f.hue},85%,60%,${0.35*glow})`);fg.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=fg;ctx.fillRect(fx,-f.h/2,f.w,f.h);
+    // silhouette hint: two figures / one figure
+    ctx.fillStyle='rgba(8,6,12,0.85)';
+    const n=1+(i%3===0?1:0);for(let k=0;k<n;k++){const cx=fx+f.w*(0.3+k*0.4),cy=f.h/2;ctx.beginPath();ctx.arc(cx,cy-30,9,0,6.28);ctx.fill();ctx.fillRect(cx-12,cy-22,24,22);}
+    // sprocket holes
+    ctx.fillStyle='rgba(245,239,230,0.14)';for(let s=0;s<6;s++){ctx.fillRect(fx+10+s*40,-82,14,9);ctx.fillRect(fx+10+s*40,73,14,9);}
+  }
+  ctx.restore();
+  // tension line (heartbeat / emotional arc)
+  ctx.save();ctx.lineWidth=3;ctx.strokeStyle='rgba(79,179,255,0.9)';ctx.shadowColor='rgba(79,179,255,0.8)';ctx.shadowBlur=14;
+  ctx.beginPath();const reveal=Math.min(1,(t%9)/7.5);
+  for(let px=0;px<=W*reveal;px+=4){const y=H*0.84-arcY(px)*140-Math.sin(t*5+px*0.05)*2;px===0?ctx.moveTo(px,y):ctx.lineTo(px,y);}ctx.stroke();ctx.restore();
+  // title
+  ctx.save();ctx.fillStyle='#f5efe6';ctx.font='700 64px "Helvetica Neue",Arial,sans-serif';ctx.letterSpacing='6px';
+  ctx.shadowColor='rgba(0,0,0,0.8)';ctx.shadowBlur=18;ctx.fillText(TITLE,70,150);
+  ctx.font='400 26px "Helvetica Neue",Arial,sans-serif';ctx.letterSpacing='4px';ctx.fillStyle='rgba(255,179,71,0.95)';ctx.fillText(SUB,72,196);
+  ctx.font='600 22px "Helvetica Neue",Arial,sans-serif';ctx.letterSpacing='3px';ctx.fillStyle='rgba(245,239,230,0.7)';ctx.fillText('AI VIDEO WORKFLOW',72,H-52);ctx.restore();
+  // grain
+  const img=ctx.getImageData(0,0,W,H),d=img.data;for(let i=0;i<d.length;i+=16){const n=(rnd(i+t*7)-0.5)*18;d[i]+=n;d[i+1]+=n;d[i+2]+=n;}ctx.putImageData(img,0,0);
+}
+if(fixedT!==null){draw(fixedT);window.__done=true;}
+else{let s=performance.now();(function loop(){draw((performance.now()-s)/1000);requestAnimationFrame(loop);})();}
+</script>
+</body>
+</html>

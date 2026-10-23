@@ -1,0 +1,39 @@
+{
+  "note": "v3: same beats as v2, 3D cartoon look; Image Type 3D + Use Creative mode for image generation.",
+  "S010": {
+    "image_prompt": "Stylized 3D animated cartoon look with soft rounded character designs, expressive big eyes, warm painterly lighting and subtle rim light, vertical 9:16 portrait framing, tall wide shot of a weathered farmhouse kitchen table at evening. Dale, a farmer about fifty with a close-cropped grey beard and green canvas work jacket, seated at screen left; June, late forties, dark hair with grey streaks tied back, grey wool cardigan, seated at screen right; Rosa, early twenties, dark curly braid, rust-red hoodie, seated centre. A lit kerosene lantern and a small battery radio on the table. Warm lantern light.",
+    "structured": "3D cartoon style. Locked vertical wide of the family at dinner, lantern and radio on the table. Rosa pauses mid-bite, looks at the radio and says quietly, uneasy, \"Dad, listen.\" Everyone stills. Warm kitchen hum, then radio static rises and a faint, far-off moaning drifts through the window."
+  },
+  "S020": {
+    "image_prompt": "Stylized 3D animated cartoon look with soft rounded character designs, expressive big eyes, warm painterly lighting and subtle rim light, vertical 9:16 portrait framing, medium close-up of June, late forties, dark hair with grey streaks tied back, sharp dark eyes, small scar on her chin, grey wool cardigan, holding a small battery radio at a tall farmhouse window at dusk. Beyond the glass, a dirt road and dim distant figures walking toward the house. Cool blue dusk, warm lantern light on her face.",
+    "structured": "3D cartoon style. Locked vertical medium close-up of June at the window holding the radio. She stares out past the camera; her face hardens and she lowers the radio and says flat and fast, \"They're coming up the road.\" Radio voice cuts to static. Wind rises; a low moaning grows."
+  },
+  "S030": {
+    "image_prompt": "Stylized 3D animated cartoon look with soft rounded character designs, expressive big eyes, warm painterly lighting and subtle rim light, vertical 9:16 portrait framing, medium shot of Dale, a farmer about fifty with a close-cropped grey beard and green canvas work jacket, bracing a wooden plank across a full-height farmhouse front door, claw hammer raised in his right hand, two more planks leaning beside him. Warm lantern light, night outside.",
+    "structured": "3D cartoon style. Locked vertical medium of Dale at the door. He drives nails through the plank with three fast, hard hammer strikes, then snatches the next plank and barks without looking, \"Rosa, the lantern. Now.\" Hammer strikes cut over the wind and a rising moaning; a heavy thump lands on the other side of the door."
+  },
+  "S040": {
+    "image_prompt": "Stylized 3D animated cartoon look with soft rounded character designs, expressive big eyes, warm painterly lighting and subtle rim light, vertical 9:16 portrait framing, close-up of Rosa, early twenties, dark curly hair in a loose braid, freckles, oversized rust-red hoodie, holding a lit kerosene lantern at chest height in a farmhouse kitchen at night. A tall dark window directly behind her, glass intact. Warm lantern light under her face.",
+    "structured": "3D cartoon style. Locked vertical close-up of Rosa holding the lantern, window behind her. The glass bursts inward in a spray; she screams, \"Dad!\" and drops low, the lantern swinging wildly. Shattering glass, loud moaning through the gap, lantern clatter, wind."
+  },
+  "S050": {
+    "image_prompt": "Stylized 3D animated cartoon look with soft rounded character designs, expressive big eyes, warm painterly lighting and subtle rim light, vertical 9:16 portrait framing, medium two-shot in a farmhouse kitchen at night. Dale, a farmer about fifty with a grey beard and green canvas work jacket, at screen left swinging the butt of an old double-barrel shotgun at a broken window where dark figures reach in; June, late forties, grey cardigan, at screen right gripping the arm of Rosa, early twenties, rust-red hoodie, who holds a lantern. Warm lantern light, chaos.",
+    "structured": "3D cartoon style. Locked vertical two-shot. Dale slams the shotgun butt into the window frame twice, driving the reaching figures back. June hauls Rosa toward the door and shouts, \"Truck. Go!\" Heavy impacts, moaning, boots pounding floorboards, wind."
+  },
+  "S060": {
+    "image_prompt": "Stylized 3D animated cartoon look with soft rounded character designs, expressive big eyes, warm painterly lighting and subtle rim light, vertical 9:16 portrait framing, close-up of Dale, a farmer about fifty with a close-cropped grey beard and green canvas work jacket, in the driver seat of an old pickup truck at night, hand on the ignition key, dashboard glow on his face. In the side mirror, dark figures approach. Rain-flecked windshield.",
+    "structured": "3D cartoon style. Locked vertical close-up of Dale in the cab. He turns the key: the starter grinds and the engine coughs and dies. Again. He slams the wheel and says through gritted teeth, \"Come on. Come on.\" Starter grinding, moaning closer, hands pounding on the truck bed."
+  },
+  "S070": {
+    "image_prompt": "Stylized 3D animated cartoon look with soft rounded character designs, expressive big eyes, warm painterly lighting and subtle rim light, vertical 9:16 portrait framing, tall wide shot from directly behind an old pickup truck in a dark farm yard at night, its headlights off, a crowd of dark indistinct figures filling the yard ahead of it, a farmhouse at the edge of frame. Moonless, cold blue night.",
+    "structured": "3D cartoon style. Locked vertical wide from behind the truck. The engine catches with a roar and the headlights blaze on, flooding the yard; the figures stagger and shield their faces; the truck lunges forward through the gap and out of frame. No dialogue. Engine roar, tires on dirt, figures scattering, moaning fading behind."
+  },
+  "S080": {
+    "image_prompt": "Stylized 3D animated cartoon look with soft rounded character designs, expressive big eyes, warm painterly lighting and subtle rim light, vertical 9:16 portrait framing, medium close-up of June, late forties, dark hair with grey streaks tied back, grey wool cardigan, in the passenger seat of an old pickup truck at night, turned to look back through the rear window where a barn burns orange behind the farmhouse. Orange firelight on her face.",
+    "structured": "3D cartoon style. Locked vertical medium close-up of June in the cab. She stares back at the burning barn, then turns off-screen left to Dale and grips his arm, breathless and horrified, \"Dale. The barn.\" The truck brakes hard. Fire crackle, engine idling, wind."
+  },
+  "S090": {
+    "image_prompt": "Stylized 3D animated cartoon look with soft rounded character designs, expressive big eyes, warm painterly lighting and subtle rim light, vertical 9:16 portrait framing, tall wide shot at dawn: an old pickup truck stopped on a grassy ridge, smoke on the horizon. Beside it, Dale, a farmer about fifty with a grey beard and green canvas work jacket and a bandaged right hand, at screen left; Rosa, early twenties, rust-red hoodie, braid, centre; June, late forties, grey cardigan, at screen right. Pale gold light.",
+    "structured": "3D cartoon style. Locked vertical wide on the ridge at dawn. The three stand still beside the truck, smoke rising far behind them. June leans into Dale, looks at him and says quietly, exhausted and relieved, \"We held.\" A long beat. Birds, wind, a distant crackle; the moaning is gone."
+  }
+}

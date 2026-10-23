@@ -1,0 +1,228 @@
+[
+  {
+    "id": "S010",
+    "ordinal": 1,
+    "framing": "medium two-shot at eye level in the doorway",
+    "camera_motion": "locked",
+    "character_ids": [
+      "MARA",
+      "ELI"
+    ],
+    "screen_positions": {
+      "MARA": "left",
+      "ELI": "right"
+    },
+    "eyelines": {
+      "MARA": "right",
+      "ELI": "left"
+    },
+    "start_state": "Mara holds the brass key in her right hand at waist height. Eli stands in the doorway, box visible behind him.",
+    "end_state": "Same positions. Key still in Mara's right hand. Eli has started to react.",
+    "action": "Mara lifts the key slightly and looks at Eli.",
+    "dialogue": [
+      {
+        "speaker": "MARA",
+        "text": "I thought you were leaving.",
+        "tone": "quiet, a little let down",
+        "pause_after": "one beat, she holds his gaze"
+      }
+    ],
+    "audio_continuity": "quiet corridor room tone begins here and continues through all shots",
+    "prop_state": {
+      "KEY01": {
+        "holder": "MARA",
+        "count_visible": 1
+      },
+      "BOX01": {
+        "holder": "ELI",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 6,
+      "max": 8
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-mara-front",
+      "ref-eli-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S020",
+    "ordinal": 2,
+    "framing": "close-up of Eli, eye level",
+    "camera_motion": "locked",
+    "character_ids": [
+      "ELI"
+    ],
+    "screen_positions": {
+      "ELI": "center",
+      "MARA": "offscreen"
+    },
+    "eyelines": {
+      "ELI": "offscreen_left"
+    },
+    "start_state": "Eli in the doorway, warm light on his right side, blue overshirt, box edge visible behind.",
+    "end_state": "Eli has a restrained smile; no movement out of frame.",
+    "action": "Eli's expression softens into a restrained smile.",
+    "dialogue": [
+      {
+        "speaker": "ELI",
+        "text": "Just making room for my mother.",
+        "tone": "gentle, slightly amused",
+        "pause_after": "small breath"
+      }
+    ],
+    "audio_continuity": "same corridor room tone, no change in level",
+    "prop_state": {
+      "BOX01": {
+        "holder": "ELI",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S010"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 6,
+      "max": 8
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-eli-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S030",
+    "ordinal": 3,
+    "framing": "close-up of Mara, eye level",
+    "camera_motion": "locked",
+    "character_ids": [
+      "MARA"
+    ],
+    "screen_positions": {
+      "MARA": "center",
+      "ELI": "offscreen"
+    },
+    "eyelines": {
+      "MARA": "offscreen_right"
+    },
+    "start_state": "Mara facing screen right, key still in her right hand at waist height (hand may be at frame edge).",
+    "end_state": "Shoulders drop slightly in relief. Key not handed over yet.",
+    "action": "Mara's shoulders relax; a small exhale.",
+    "dialogue": [
+      {
+        "speaker": "MARA",
+        "text": "Next door?",
+        "tone": "surprised, relieved",
+        "pause_after": "half a beat"
+      }
+    ],
+    "audio_continuity": "same corridor room tone",
+    "prop_state": {
+      "KEY01": {
+        "holder": "MARA",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S010"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 6,
+      "max": 8
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-mara-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S040",
+    "ordinal": 4,
+    "framing": "wider two-shot, eye level, both figures and the doorway visible",
+    "camera_motion": "locked",
+    "character_ids": [
+      "MARA",
+      "ELI"
+    ],
+    "screen_positions": {
+      "MARA": "left",
+      "ELI": "right"
+    },
+    "eyelines": {
+      "MARA": "right",
+      "ELI": "left"
+    },
+    "start_state": "Same geography as S010. Key in Mara's right hand. Eli's left palm open and raised slightly.",
+    "end_state": "Key rests in Eli's open left palm. Mara's right hand withdrawing. One key only.",
+    "action": "Eli nods once. Mara places the single brass key into his open left palm.",
+    "dialogue": [],
+    "audio_continuity": "corridor room tone continues; a faint metallic touch as the key lands",
+    "prop_state": {
+      "KEY01": {
+        "holder": "ELI",
+        "count_visible": 1
+      },
+      "BOX01": {
+        "holder": "ELI",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S020",
+      "S030"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 6,
+      "max": 8
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-mara-front",
+      "ref-eli-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  }
+]

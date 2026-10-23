@@ -1,0 +1,36 @@
+{
+  "id": "farmer-zombie",
+  "contract_version": "0.1.0",
+  "owner": "your-name",
+  "title": "Hold the Line (working title)",
+  "aspect_ratio": "16:9",
+  "intended_duration_s": {
+    "min": 48,
+    "max": 64
+  },
+  "provider": "videoexpress",
+  "model_label": {
+    "requested": "Fable 5.1 for Claude",
+    "observed": null,
+    "identity_verified": false,
+    "evidence_ref": null
+  },
+  "capability_evidence": {
+    "status": "not_audited",
+    "audited_at": null,
+    "report_path": "docs/capabilities.md"
+  },
+  "budget_approved": {
+    "approved": false,
+    "approval_id": null,
+    "max_attempts_per_shot": 2,
+    "max_concurrent_jobs": 1,
+    "spend_ceiling_note": "Template only. Obtain fresh owner approval for this run."
+  },
+  "content_rights": {
+    "original_story": true,
+    "no_real_person_likeness": true,
+    "no_cloned_voice": true,
+    "reference_rights_cleared": false
+  }
+}

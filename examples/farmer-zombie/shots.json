@@ -1,0 +1,449 @@
+[
+  {
+    "id": "S010",
+    "ordinal": 1,
+    "framing": "wide interior, eye level, kitchen with window and door visible",
+    "camera_motion": "locked",
+    "character_ids": [
+      "DALE",
+      "JUNE",
+      "ROSA"
+    ],
+    "screen_positions": {
+      "DALE": "left",
+      "JUNE": "right",
+      "ROSA": "center"
+    },
+    "eyelines": {
+      "DALE": "right",
+      "JUNE": "left",
+      "ROSA": "down"
+    },
+    "start_state": "Dusk. Dale stands at the window at screen left looking out. June at the door screen right. Rosa seated at the table centre, lantern lit beside her.",
+    "end_state": "Same positions. Dale has turned from the window toward the room.",
+    "action": "Dale turns from the window toward the room.",
+    "dialogue": [
+      {
+        "speaker": "DALE",
+        "text": "They're in the lower field.",
+        "tone": "flat, controlled",
+        "pause_after": "a beat; the wind fills it"
+      }
+    ],
+    "audio_continuity": "wind over the field and faint distant moaning begin here and continue through S070",
+    "prop_state": {
+      "LANTERN01": {
+        "holder": "JUNE",
+        "count_visible": 1
+      },
+      "BOARD01": {
+        "holder": "DALE",
+        "count_visible": 3
+      }
+    },
+    "dependencies": [],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 6,
+      "max": 8
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-dale-front",
+      "ref-june-front",
+      "ref-rosa-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S020",
+    "ordinal": 2,
+    "framing": "close-up of June, eye level",
+    "camera_motion": "locked",
+    "character_ids": [
+      "JUNE"
+    ],
+    "screen_positions": {
+      "JUNE": "center",
+      "DALE": "offscreen"
+    },
+    "eyelines": {
+      "JUNE": "offscreen_left"
+    },
+    "start_state": "June by the door, lantern light on her left side, cool dusk behind.",
+    "end_state": "Her jaw tightens; she nods once.",
+    "action": "June swallows, then nods once.",
+    "dialogue": [
+      {
+        "speaker": "JUNE",
+        "text": "Then we board the door.",
+        "tone": "quiet, steady",
+        "pause_after": "short"
+      }
+    ],
+    "audio_continuity": "same wind and distant moaning",
+    "prop_state": {},
+    "dependencies": [
+      "S010"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 6,
+      "max": 8
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-june-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S030",
+    "ordinal": 3,
+    "framing": "medium shot of Dale at the door frame, eye level",
+    "camera_motion": "locked",
+    "character_ids": [
+      "DALE"
+    ],
+    "screen_positions": {
+      "DALE": "left",
+      "JUNE": "offscreen"
+    },
+    "eyelines": {
+      "DALE": "right"
+    },
+    "start_state": "Dale holds a plank against the door frame with his left hand, hammer in his right. Two more planks lean against the wall.",
+    "end_state": "The plank is nailed across the door. Hammer still in hand.",
+    "action": "Dale drives two nails through the plank into the door frame.",
+    "dialogue": [],
+    "audio_continuity": "hammer strikes over the wind; moaning slightly louder",
+    "prop_state": {
+      "BOARD01": {
+        "holder": "DALE",
+        "count_visible": 3
+      },
+      "HAMMER01": {
+        "holder": "DALE",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S020"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 6,
+      "max": 8
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-dale-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S040",
+    "ordinal": 4,
+    "framing": "close-up of Rosa, eye level",
+    "camera_motion": "locked",
+    "character_ids": [
+      "ROSA"
+    ],
+    "screen_positions": {
+      "ROSA": "center",
+      "DALE": "offscreen"
+    },
+    "eyelines": {
+      "ROSA": "offscreen_left"
+    },
+    "start_state": "Rosa at the table, lantern glow on her face, braid over her shoulder.",
+    "end_state": "Tears held back; she grips the table edge.",
+    "action": "Rosa looks toward her father and her hands tighten on the table edge.",
+    "dialogue": [
+      {
+        "speaker": "ROSA",
+        "text": "Dad, the window.",
+        "tone": "small, frightened",
+        "pause_after": "a sharp breath"
+      }
+    ],
+    "audio_continuity": "same wind; a single soft thud against glass off-screen",
+    "prop_state": {
+      "LANTERN01": {
+        "holder": "JUNE",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S030"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 6,
+      "max": 8
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-rosa-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S050",
+    "ordinal": 5,
+    "framing": "medium two-shot, Dale at the window screen left, June screen right",
+    "camera_motion": "locked",
+    "character_ids": [
+      "DALE",
+      "JUNE"
+    ],
+    "screen_positions": {
+      "DALE": "left",
+      "JUNE": "right"
+    },
+    "eyelines": {
+      "DALE": "right",
+      "JUNE": "left"
+    },
+    "start_state": "Dale at the window holding the shotgun low across his body. June at screen right holding the lantern. Dark figures are vague shapes beyond the glass.",
+    "end_state": "Dale has turned to June; the shotgun is lowered.",
+    "action": "Dale turns from the window to face June.",
+    "dialogue": [
+      {
+        "speaker": "DALE",
+        "text": "I'll draw them to the barn. Keep the lantern low.",
+        "tone": "low, resolved",
+        "pause_after": "he holds her gaze"
+      }
+    ],
+    "audio_continuity": "wind; glass creaking; moaning close now",
+    "prop_state": {
+      "SHOTGUN01": {
+        "holder": "DALE",
+        "count_visible": 1
+      },
+      "LANTERN01": {
+        "holder": "JUNE",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S040"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 6,
+      "max": 8
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-dale-front",
+      "ref-june-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S060",
+    "ordinal": 6,
+    "framing": "close-up of June, eye level",
+    "camera_motion": "locked",
+    "character_ids": [
+      "JUNE"
+    ],
+    "screen_positions": {
+      "JUNE": "center",
+      "DALE": "offscreen"
+    },
+    "eyelines": {
+      "JUNE": "offscreen_left"
+    },
+    "start_state": "June holding the lantern at chest height, its light under her face.",
+    "end_state": "Her eyes are wet; she lowers the lantern slowly.",
+    "action": "June lowers the lantern slowly, eyes on Dale.",
+    "dialogue": [
+      {
+        "speaker": "JUNE",
+        "text": "Come back to us.",
+        "tone": "barely above a whisper, breaking",
+        "pause_after": "long"
+      }
+    ],
+    "audio_continuity": "wind; moaning; a door latch off-screen",
+    "prop_state": {
+      "LANTERN01": {
+        "holder": "JUNE",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S050"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 6,
+      "max": 8
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-june-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S070",
+    "ordinal": 7,
+    "framing": "wide exterior at night, farmhouse at screen right, Dale at screen left walking toward a dark barn beyond the house (away from camera)",
+    "camera_motion": "locked",
+    "character_ids": [
+      "DALE"
+    ],
+    "screen_positions": {
+      "DALE": "left"
+    },
+    "eyelines": {
+      "DALE": "right"
+    },
+    "start_state": "Night. Dale walks away from the farmhouse across the yard toward the barn, shotgun held low, a flashlight beam raised. Dark figures in the field turn toward the light.",
+    "end_state": "Dale reaches the barn door; the figures drift after him, away from the house.",
+    "action": "Dale walks to the barn with the light raised; the figures follow him away from the house.",
+    "dialogue": [],
+    "audio_continuity": "wind; moaning moves with the figures; boots on dirt",
+    "prop_state": {
+      "SHOTGUN01": {
+        "holder": "DALE",
+        "count_visible": 1
+      }
+    },
+    "dependencies": [
+      "S060"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 6,
+      "max": 8
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-dale-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  },
+  {
+    "id": "S080",
+    "ordinal": 8,
+    "framing": "wide interior at dawn, same kitchen, June screen right, Rosa centre, boarded door",
+    "camera_motion": "locked",
+    "character_ids": [
+      "JUNE",
+      "ROSA"
+    ],
+    "screen_positions": {
+      "JUNE": "right",
+      "ROSA": "center"
+    },
+    "eyelines": {
+      "JUNE": "left",
+      "ROSA": "left"
+    },
+    "start_state": "Pale dawn light through the window. June and Rosa sit against the wall by the boarded door, lantern out on the floor. Silence.",
+    "end_state": "Both look up toward the window at a slow knock. June stands. Hope on both faces; outcome unresolved.",
+    "action": "A slow knock on the boards; June rises and looks toward the window.",
+    "dialogue": [
+      {
+        "speaker": "ROSA",
+        "text": "Mom?",
+        "tone": "hushed, hopeful",
+        "pause_after": "the knock answers"
+      }
+    ],
+    "audio_continuity": "wind gone; birds; a slow double knock on wood",
+    "prop_state": {
+      "LANTERN01": {
+        "holder": "JUNE",
+        "count_visible": 1
+      },
+      "BOARD01": {
+        "holder": "DALE",
+        "count_visible": 3
+      }
+    },
+    "dependencies": [
+      "S070"
+    ],
+    "scene_id": "SC001",
+    "duration_requested_s": {
+      "min": 6,
+      "max": 8
+    },
+    "seed": null,
+    "reference_asset_ids": [
+      "ref-june-front",
+      "ref-rosa-front"
+    ],
+    "observed_settings": {
+      "model_label": null,
+      "enhancer": null,
+      "resolution": null,
+      "fps": null,
+      "style": null
+    },
+    "prompt_hash": null,
+    "approval_ids": []
+  }
+]

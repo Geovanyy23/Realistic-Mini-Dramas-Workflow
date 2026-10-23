@@ -1,0 +1,117 @@
+[
+  {
+    "id": "DALE",
+    "fictional_adult": true,
+    "name": "Dale",
+    "age_range": {
+      "min": 48,
+      "max": 54
+    },
+    "canonical_description": "Fictional farmer around fifty, broad-shouldered and weathered, short grey-brown hair, close-cropped grey beard, deep-set tired eyes.",
+    "face": "square jaw, sun lines, close-cropped grey beard, grey-blue eyes",
+    "hair": "short grey-brown hair",
+    "skin_texture": "weathered, sun-marked, natural pores",
+    "wardrobe_id": "DALE_W1",
+    "wardrobe": "faded green canvas work jacket over a plaid flannel shirt, worn jeans, mud-stained boots",
+    "voice_profile": {
+      "description": "low, gravelly, steady; speaks slowly",
+      "cloned": false
+    },
+    "reference_assets": [
+      {
+        "asset_id": "ref-dale-front",
+        "view": "front",
+        "sha256": null,
+        "status": "placeholder"
+      },
+      {
+        "asset_id": "ref-dale-3q",
+        "view": "three_quarter",
+        "sha256": null,
+        "status": "placeholder"
+      }
+    ],
+    "forbidden_changes": [
+      "beard",
+      "hair",
+      "jacket",
+      "age appearance"
+    ]
+  },
+  {
+    "id": "JUNE",
+    "fictional_adult": true,
+    "name": "June",
+    "age_range": {
+      "min": 45,
+      "max": 50
+    },
+    "canonical_description": "Fictional farm wife in her late forties, slim, dark hair with grey streaks tied back, sharp watchful eyes.",
+    "face": "narrow face, high cheekbones, dark eyes, small scar on chin",
+    "hair": "dark hair with grey streaks tied back",
+    "skin_texture": "natural, lightly lined, no retouching",
+    "wardrobe_id": "JUNE_W1",
+    "wardrobe": "grey wool cardigan over a cream blouse, dark trousers",
+    "voice_profile": {
+      "description": "clear, quiet, controlled, breaks slightly under strain",
+      "cloned": false
+    },
+    "reference_assets": [
+      {
+        "asset_id": "ref-june-front",
+        "view": "front",
+        "sha256": null,
+        "status": "placeholder"
+      },
+      {
+        "asset_id": "ref-june-3q",
+        "view": "three_quarter",
+        "sha256": null,
+        "status": "placeholder"
+      }
+    ],
+    "forbidden_changes": [
+      "hair",
+      "cardigan",
+      "age appearance"
+    ]
+  },
+  {
+    "id": "ROSA",
+    "fictional_adult": true,
+    "name": "Rosa",
+    "age_range": {
+      "min": 21,
+      "max": 24
+    },
+    "canonical_description": "Fictional adult daughter in her early twenties, dark curly hair in a loose braid, freckles, anxious but determined.",
+    "face": "round face, freckles, dark brown eyes, straight brows",
+    "hair": "dark curly hair in a loose braid",
+    "skin_texture": "natural, freckled",
+    "wardrobe_id": "ROSA_W1",
+    "wardrobe": "oversized rust-red hoodie, jeans, sneakers",
+    "voice_profile": {
+      "description": "young, soft, slightly shaky",
+      "cloned": false
+    },
+    "reference_assets": [
+      {
+        "asset_id": "ref-rosa-front",
+        "view": "front",
+        "sha256": null,
+        "status": "placeholder"
+      },
+      {
+        "asset_id": "ref-rosa-3q",
+        "view": "three_quarter",
+        "sha256": null,
+        "status": "placeholder"
+      }
+    ],
+    "forbidden_changes": [
+      "hair",
+      "hoodie",
+      "age appearance"
+    ]
+  }
+]

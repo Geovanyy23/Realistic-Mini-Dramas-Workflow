@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "approval.schema.json",
+  "title": "Approval",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "gate",
+    "reviewer",
+    "timestamp",
+    "contract_hash",
+    "scope",
+    "budget_note"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "gate": {
+      "type": "string",
+      "enum": [
+        "A_premise_budget",
+        "B_references_locked",
+        "C_spend",
+        "D_model_or_terms_change",
+        "E_final_release"
+      ]
+    },
+    "reviewer": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "contract_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "budget_note": {
+      "type": "string"
+    }
+  }
+}

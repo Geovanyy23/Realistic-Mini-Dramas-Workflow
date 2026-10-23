@@ -1,0 +1,55 @@
+{
+  "id": "SC001",
+  "location_reference": "loc-farmhouse-01 (original: weathered farmhouse kitchen, front door and window; dirt yard with an old pickup truck; barn beyond)",
+  "floor_plan": "Kitchen interior. Window on the far wall looks onto a flat field and a treeline. Front door on screen right. Table center. Dale works at screen left near the window; June at screen right near the door; Rosa at the table center. Yard outside the front door: pickup truck parked nose toward the field; barn at the far side of the yard.",
+  "light": {
+    "direction": "warm lantern key from the table centre; cool dusk fill from the window",
+    "color": "warm amber lantern against blue-grey dusk",
+    "source": "kerosene lantern on the table; fading daylight through the window"
+  },
+  "time_of_day": "dusk into night, final shot at dawn",
+  "ambience": "wind over the field, creaking timber, distant low moaning carried on the wind; no music",
+  "axis_180": {
+    "description": "Camera stays on the kitchen side of the Dale–June line. Dale is always screen left looking right; June is always screen right looking left. Rosa is centre or off-screen.",
+    "left_character": "DALE",
+    "right_character": "JUNE"
+  },
+  "prop_inventory": [
+    {
+      "prop_id": "LANTERN01",
+      "name": "kerosene lantern",
+      "count": 1,
+      "owner_character": "JUNE"
+    },
+    {
+      "prop_id": "SHOTGUN01",
+      "name": "old double-barrel shotgun, held only, never fired on screen",
+      "count": 1,
+      "owner_character": "DALE"
+    },
+    {
+      "prop_id": "BOARD01",
+      "name": "stack of wooden planks",
+      "count": 3,
+      "owner_character": "DALE"
+    },
+    {
+      "prop_id": "HAMMER01",
+      "name": "claw hammer",
+      "count": 1,
+      "owner_character": "DALE"
+    },
+    {
+      "prop_id": "TRUCK01",
+      "name": "old pickup truck",
+      "count": 1,
+      "owner_character": "DALE"
+    },
+    {
+      "prop_id": "RADIO01",
+      "name": "battery radio",
+      "count": 1,
+      "owner_character": "JUNE"
+    }
+  ]
+}

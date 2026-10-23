@@ -1,0 +1,23 @@
+{
+  "note": "Original prose prompts authored for this pilot. Untested hypotheses; adapt only to controls actually observed in the provider UI. Dialogue must appear verbatim.",
+  "variants": {
+    "structured": "default; one shot per generation",
+    "concise": "experiment E1 only"
+  },
+  "S010": {
+    "structured": "A live-action medium two-shot at eye level in a modest apartment doorway at dusk. Mara, a woman in her early forties with dark hair greying at the temples pulled back loosely, wearing a charcoal cardigan over a grey tee, stands in the corridor at screen left holding a single brass key in her right hand. Eli, about thirty, short dark curly hair, faded blue overshirt over a white tee, stands in the open doorway at screen right; one closed cardboard box is visible behind him. Warm practical light from inside the apartment falls across them. The camera is locked. Mara lifts the key slightly, looks at Eli and says quietly, a little let down, \"I thought you were leaving.\" She holds his gaze for a beat. Quiet corridor room tone continues beneath her voice.",
+    "concise": "Mara, at screen left, lifts a brass key toward Eli in the doorway and says, \"I thought you were leaving.\" Locked camera, warm doorway light, quiet corridor."
+  },
+  "S020": {
+    "structured": "A live-action close-up at eye level of Eli, about thirty, short dark curly hair, clean-shaven, faded blue overshirt over a white tee, standing in an apartment doorway at dusk with the edge of a closed cardboard box behind him. Warm practical light from inside the apartment lights his right side. The camera is locked. Looking off-screen left toward Mara, his expression softens into a restrained smile and he says gently, slightly amused, \"Just making room for my mother.\" He takes a small breath. Quiet corridor room tone continues.",
+    "concise": "Close-up of Eli looking off-screen left; he smiles slightly and says, \"Just making room for my mother.\" Locked camera, warm light, quiet corridor."
+  },
+  "S030": {
+    "structured": "A live-action close-up at eye level of Mara, a woman in her early forties with dark hair greying at the temples pulled back loosely, charcoal cardigan over a grey tee, standing in a dim apartment corridor at dusk with warm light from a doorway on her left side. The camera is locked. Looking off-screen right toward Eli, her shoulders relax and she exhales softly, then says, surprised and relieved, \"Next door?\" Quiet corridor room tone continues.",
+    "concise": "Close-up of Mara looking off-screen right; her shoulders relax and she says, \"Next door?\" Locked camera, warm side light, quiet corridor."
+  },
+  "S040": {
+    "structured": "A live-action wide two-shot at eye level in a modest apartment doorway at dusk. Mara, early forties, dark hair greying at the temples, charcoal cardigan, stands in the corridor at screen left. Eli, about thirty, short dark curly hair, faded blue overshirt, stands in the doorway at screen right with one closed cardboard box behind him. Warm practical light from inside the apartment. The camera is locked. Eli nods once and opens his left palm. Mara places a single brass key into his open left palm and her hand withdraws slowly. No one speaks. Quiet corridor room tone continues, with a faint metallic touch as the key lands.",
+    "concise": "Wide two-shot in the doorway: Eli nods and opens his left palm; Mara places one brass key into it. No dialogue. Locked camera, warm light."
+  }
+}

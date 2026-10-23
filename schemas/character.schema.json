@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "character.schema.json",
+  "title": "Character",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "fictional_adult",
+    "name",
+    "age_range",
+    "canonical_description",
+    "face",
+    "hair",
+    "skin_texture",
+    "wardrobe_id",
+    "wardrobe",
+    "voice_profile",
+    "reference_assets",
+    "forbidden_changes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9_]{1,31}$"
+    },
+    "fictional_adult": {
+      "const": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "age_range": {
+      "type": "object",
+      "required": [
+        "min",
+        "max"
+      ],
+      "properties": {
+        "min": {
+          "type": "integer",
+          "minimum": 18
+        },
+        "max": {
+          "type": "integer",
+          "minimum": 18
+        }
+      }
+    },
+    "canonical_description": {
+      "type": "string",
+      "minLength": 20
+    },
+    "face": {
+      "type": "string"
+    },
+    "hair": {
+      "type": "string"
+    },
+    "skin_texture": {
+      "type": "string"
+    },
+    "wardrobe_id": {
+      "type": "string"
+    },
+    "wardrobe": {
+      "type": "string"
+    },
+    "voice_profile": {
+      "type": "object",
+      "required": [
+        "description",
+        "cloned"
+      ],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "cloned": {
+          "const": false
+        }
+      }
+    },
+    "reference_assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "asset_id",
+          "view",
+          "sha256"
+        ],
+        "properties": {
+          "asset_id": {
+            "type": "string"
+          },
+          "view": {
+            "type": "string",
+            "enum": [
+              "front",
+              "three_quarter",
+              "profile"
+            ]
+          },
+          "sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "placeholder",
+              "approved"
+            ]
+          }
+        }
+      }
+    },
+    "forbidden_changes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

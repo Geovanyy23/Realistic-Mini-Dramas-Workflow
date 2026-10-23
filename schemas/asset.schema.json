@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "asset.schema.json",
+  "title": "Asset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "relative_path",
+    "sha256",
+    "provenance",
+    "rights",
+    "provider_job_id",
+    "source_shot",
+    "created_at",
+    "ffprobe",
+    "qa_status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "relative_path": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*\\.\\.)(?!private/).*"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "provenance": {
+      "type": "string",
+      "enum": [
+        "provider_output",
+        "owner_upload",
+        "synthetic_fixture",
+        "edit_export"
+      ]
+    },
+    "rights": {
+      "type": "string"
+    },
+    "provider_job_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source_shot": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "ffprobe": {
+      "anyOf": [
+        {
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "qa_status": {
+      "type": "string",
+      "enum": [
+        "unreviewed",
+        "accepted",
+        "rejected",
+        "invalidated"
+      ]
+    }
+  }
+}

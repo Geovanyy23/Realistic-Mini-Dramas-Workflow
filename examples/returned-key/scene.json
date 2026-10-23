@@ -1,0 +1,31 @@
+{
+  "id": "SC001",
+  "location_reference": "loc-doorway-01 (original: modest apartment doorway, interior corridor side)",
+  "floor_plan": "Corridor runs left-right. Apartment door open on the far wall. Mara stands in the corridor at screen left; Eli stands in the doorway at screen right. A closed cardboard box sits inside the apartment behind Eli.",
+  "light": {
+    "direction": "warm key from inside the apartment, falling on Eli's right side and Mara's left side",
+    "color": "warm tungsten with cooler corridor fill",
+    "source": "practical ceiling light inside the apartment"
+  },
+  "time_of_day": "dusk",
+  "ambience": "quiet corridor room tone; distant building hum; no music",
+  "axis_180": {
+    "description": "Camera stays on the corridor side of the Mara–Eli line. Mara always looks screen right toward Eli; Eli always looks screen left toward Mara.",
+    "left_character": "MARA",
+    "right_character": "ELI"
+  },
+  "prop_inventory": [
+    {
+      "prop_id": "KEY01",
+      "name": "single brass key",
+      "count": 1,
+      "owner_character": "MARA"
+    },
+    {
+      "prop_id": "BOX01",
+      "name": "closed cardboard moving box",
+      "count": 1,
+      "owner_character": "ELI"
+    }
+  ]
+}

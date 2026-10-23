@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "scene.schema.json",
+  "title": "Scene",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "location_reference",
+    "floor_plan",
+    "light",
+    "time_of_day",
+    "ambience",
+    "axis_180",
+    "prop_inventory"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^SC[0-9]{3}$"
+    },
+    "location_reference": {
+      "type": "string"
+    },
+    "floor_plan": {
+      "type": "string"
+    },
+    "light": {
+      "type": "object",
+      "required": [
+        "direction",
+        "color",
+        "source"
+      ],
+      "properties": {
+        "direction": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        }
+      }
+    },
+    "time_of_day": {
+      "type": "string"
+    },
+    "ambience": {
+      "type": "string"
+    },
+    "axis_180": {
+      "type": "object",
+      "required": [
+        "description",
+        "left_character",
+        "right_character"
+      ],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "left_character": {
+          "type": "string"
+        },
+        "right_character": {
+          "type": "string"
+        }
+      }
+    },
+    "prop_inventory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "prop_id",
+          "name",
+          "count",
+          "owner_character"
+        ],
+        "properties": {
+          "prop_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "owner_character": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

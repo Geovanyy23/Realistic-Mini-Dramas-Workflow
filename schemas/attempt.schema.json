@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "attempt.schema.json",
+  "title": "Attempt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "shot_id",
+    "operation_key",
+    "state",
+    "started_at",
+    "finished_at",
+    "provider_job_id",
+    "evidence_before",
+    "evidence_after",
+    "cost_if_visible",
+    "failure_class",
+    "retry_count",
+    "chosen_take",
+    "reviewer"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "shot_id": {
+      "type": "string"
+    },
+    "operation_key": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "PLANNED",
+        "APPROVAL_NEEDED",
+        "APPROVED",
+        "SUBMITTING",
+        "UNCERTAIN",
+        "SUBMITTED",
+        "RUNNING",
+        "DOWNLOADED",
+        "QA_PENDING",
+        "ACCEPTED",
+        "REJECTED",
+        "BLOCKED_AUTH",
+        "BLOCKED_MODEL",
+        "FAILED"
+      ]
+    },
+    "started_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "finished_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "provider_job_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "evidence_before": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "evidence_after": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "cost_if_visible": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "failure_class": {
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": [
+            "transport",
+            "generation",
+            "content_model_mismatch",
+            "auth_terms_payment",
+            "media_invalid"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "retry_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "chosen_take": {
+      "type": "boolean"
+    },
+    "reviewer": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "dry_run": {
+      "type": "boolean"
+    }
+  }
+}

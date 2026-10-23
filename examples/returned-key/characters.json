@@ -1,0 +1,79 @@
+[
+  {
+    "id": "MARA",
+    "fictional_adult": true,
+    "name": "Mara",
+    "age_range": {
+      "min": 38,
+      "max": 44
+    },
+    "canonical_description": "Fictional building caretaker in her early forties, medium build, calm and observant, dark hair with grey at the temples pulled back loosely.",
+    "face": "oval face, faint laugh lines, straight brows, brown eyes",
+    "hair": "dark brown with grey at the temples, pulled back loosely",
+    "skin_texture": "natural, visible pores, no retouching",
+    "wardrobe_id": "MARA_W1",
+    "wardrobe": "charcoal work cardigan over a plain grey tee, dark trousers, small ring of keys on a belt loop",
+    "voice_profile": {
+      "description": "low, even, unhurried; slight warmth",
+      "cloned": false
+    },
+    "reference_assets": [
+      {
+        "asset_id": "ref-mara-front",
+        "view": "front",
+        "sha256": null,
+        "status": "placeholder"
+      },
+      {
+        "asset_id": "ref-mara-3q",
+        "view": "three_quarter",
+        "sha256": null,
+        "status": "placeholder"
+      }
+    ],
+    "forbidden_changes": [
+      "hair colour",
+      "wardrobe",
+      "age appearance",
+      "ring of keys count"
+    ]
+  },
+  {
+    "id": "ELI",
+    "fictional_adult": true,
+    "name": "Eli",
+    "age_range": {
+      "min": 28,
+      "max": 33
+    },
+    "canonical_description": "Fictional tenant about thirty, lean, short dark curly hair, clean-shaven, open and slightly tired expression.",
+    "face": "narrow face, high cheekbones, dark eyes, clean-shaven",
+    "hair": "short dark curly hair",
+    "skin_texture": "natural, slight stubble shadow allowed",
+    "wardrobe_id": "ELI_W1",
+    "wardrobe": "faded blue overshirt open over a white tee, dark jeans",
+    "voice_profile": {
+      "description": "soft, mid-range, a little hoarse",
+      "cloned": false
+    },
+    "reference_assets": [
+      {
+        "asset_id": "ref-eli-front",
+        "view": "front",
+        "sha256": null,
+        "status": "placeholder"
+      },
+      {
+        "asset_id": "ref-eli-3q",
+        "view": "three_quarter",
+        "sha256": null,
+        "status": "placeholder"
+      }
+    ],
+    "forbidden_changes": [
+      "hair",
+      "wardrobe",
+      "age appearance"
+    ]
+  }
+]

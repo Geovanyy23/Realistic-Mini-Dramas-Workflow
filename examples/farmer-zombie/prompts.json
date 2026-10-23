@@ -1,0 +1,35 @@
+{
+  "note": "Original prompts for the farmer-zombie pilot. image_prompt = first-frame still for the Image Prompt box; structured = Video and Audio Prompt. Untested hypotheses; adapt to live controls. Dialogue verbatim. Figures only, no gore.",
+  "S010": {
+    "image_prompt": "Photorealistic wide interior of a weathered farmhouse kitchen at dusk. Dale, a broad-shouldered farmer about fifty with short grey-brown hair and a close-cropped grey beard, green canvas work jacket over plaid flannel, stands at the window at screen left. June, late forties, dark hair with grey streaks tied back, grey wool cardigan, stands by the front door at screen right. Rosa, early twenties, dark curly hair in a braid, rust-red hoodie, sits at the table centre beside a lit kerosene lantern. Three planks lean by the door. Warm lantern light, blue-grey dusk through the window.",
+    "structured": "Locked wide shot of the farmhouse kitchen at dusk. Dale stands at the window at screen left; June by the door at screen right; Rosa seated at the table centre beside the lit lantern. Dale turns slowly from the window toward the room and says in a flat, controlled voice, \"They're in the lower field.\" A beat. Wind over the field and faint distant moaning fill the silence. Lantern light flickers steadily."
+  },
+  "S020": {
+    "image_prompt": "Photorealistic close-up at eye level of June, a woman in her late forties with dark hair with grey streaks tied back, sharp dark eyes, small scar on her chin, grey wool cardigan over a cream blouse, standing by a farmhouse door at dusk. Warm lantern light on her left side, cool blue dusk behind her.",
+    "structured": "Locked close-up of June at the farmhouse door at dusk, lantern light on her left side. Looking off-screen left toward Dale, she swallows, then nods once and says quietly and steadily, \"Then we board the door.\" A short pause. Wind over the field and distant moaning continue."
+  },
+  "S030": {
+    "image_prompt": "Photorealistic medium shot at eye level of Dale, a farmer about fifty with a close-cropped grey beard and green canvas work jacket, at a farmhouse front door frame at dusk, holding a wooden plank against the frame with his left hand and a claw hammer in his right. Two more planks lean against the wall. Warm lantern light from inside, dim dusk outside.",
+    "structured": "Locked medium shot of Dale at the door frame holding a plank with his left hand, hammer in his right. He drives two nails through the plank into the frame with firm, heavy strikes, jaw set. No dialogue. Each hammer strike cuts over the wind; the distant moaning is a little louder now."
+  },
+  "S040": {
+    "image_prompt": "Photorealistic close-up at eye level of Rosa, a young woman in her early twenties with dark curly hair in a loose braid over her shoulder, freckles, dark brown eyes, oversized rust-red hoodie, seated at a farmhouse kitchen table at dusk with warm lantern glow on her face.",
+    "structured": "Locked close-up of Rosa at the kitchen table, lantern glow on her face. Looking off-screen left toward her father, her hands tighten on the table edge and she says in a small, frightened voice, \"Dad, the window.\" She takes a sharp breath. Wind continues; a single soft thud against glass sounds off-screen."
+  },
+  "S050": {
+    "image_prompt": "Photorealistic medium two-shot at eye level in a farmhouse kitchen at night. Dale, a farmer about fifty with a grey beard and green canvas work jacket, stands at the window at screen left holding an old double-barrel shotgun low across his body. June, late forties, grey cardigan, dark hair tied back, stands at screen right holding a lit kerosene lantern. Beyond the dark window, vague dark figures stand in the field. Warm lantern light, deep blue night.",
+    "structured": "Locked medium two-shot. Dale at the window at screen left, shotgun held low; June at screen right holding the lantern. Vague dark figures stand beyond the glass. Dale turns from the window to face June and says low and resolved, \"I'll draw them to the barn. Keep the lantern low.\" He holds her gaze. Wind, glass creaking, moaning close now."
+  },
+  "S060": {
+    "image_prompt": "Photorealistic close-up at eye level of June, a woman in her late forties with dark hair with grey streaks tied back, grey wool cardigan, holding a lit kerosene lantern at chest height so its warm light comes from under her face, dark farmhouse kitchen behind her at night.",
+    "structured": "Locked close-up of June holding the lantern at chest height, light under her face. Looking off-screen left toward Dale, her eyes fill and she lowers the lantern slowly and says barely above a whisper, voice breaking, \"Come back to us.\" A long pause. Wind, distant moaning, and a door latch clicks off-screen."
+  },
+  "S070": {
+    "image_prompt": "Photorealistic wide exterior at night. A weathered farmhouse with one dim lit window at screen left; a dark barn at the far right. Dale, a farmer about fifty in a green canvas work jacket, small in frame near the house, walks across the dirt yard toward the barn holding a shotgun low and a flashlight beam raised. Dark indistinct figures in the field beyond are turned toward the light. Moonlit blue-black sky.",
+    "structured": "Locked wide exterior at night. Dale walks steadily away from the farmhouse across the yard toward the dark barn, shotgun low, flashlight beam raised. The dark figures in the field turn toward his light and drift after him, away from the house. He reaches the barn door. No dialogue. Wind, boots on dirt, and the moaning moves with the figures."
+  },
+  "S080": {
+    "image_prompt": "Photorealistic wide interior of the same farmhouse kitchen at dawn. Pale grey-gold light through the window. The front door is boarded with three planks. June, late forties, grey cardigan, dark hair tied back, and Rosa, early twenties, rust-red hoodie, braid, sit against the wall beside the boarded door, an unlit kerosene lantern on the floor. June at screen right, Rosa centre. Still and exhausted.",
+    "structured": "Locked wide interior at dawn. June and Rosa sit against the wall by the boarded door, the lantern out on the floor. Silence, then a slow double knock on the boards. Both look up toward the window. June rises to her feet. Rosa says, hushed and hopeful, \"Mom?\" The knock answers. Birds outside; the wind is gone."
+  }
+}
