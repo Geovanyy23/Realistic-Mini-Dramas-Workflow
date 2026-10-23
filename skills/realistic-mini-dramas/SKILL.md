@@ -8,6 +8,8 @@ description: Produce an original photorealistic 24–32 s two-person dialogue sc
 Tool-neutral core (Claude and ChatGPT share schemas, state machine and rubric) with a provider adapter for VideoExpress. Everything below is a no-spend default; spending, publishing and pushing each need an explicit owner approval bound to the current contract hash.
 
 ## Intake (ask once, then proceed)
+
+Follow the STORY IDEA FIRST section of SYSTEM_PROMPT.md: ask for the user's story idea and wait before drafting or opening the browser, unless an idea is already supplied. Never automatically choose an example premise. If asked to suggest ideas, offer three and wait for the user's selection.
 premise · cast (or "write it") · format (default 16:9, 24–32 s) · references (owner-supplied or to generate) · target provider + model policy (default live VideoExpress workflow; require an exact vendor label only on explicit user request; never copy one from an example) · spend ceiling · release intent.
 
 ## Order of work

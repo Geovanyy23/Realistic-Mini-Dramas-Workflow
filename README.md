@@ -10,7 +10,7 @@ Create original mini dramas in VideoExpress with locked characters, dialogue, sc
 
 1. Sign in to VideoExpress in a dedicated browser tab.
 2. Copy [SYSTEM_PROMPT.md](SYSTEM_PROMPT.md) into a Claude or ChatGPT session with browser tools.
-3. Provide a premise, two fictional adult characters (or ask the producer to write them), and a spend ceiling.
+3. The producer first asks for your story idea and waits for your answer. Share a sentence or two, optionally including characters, setting and tone. If you already supplied an idea, it proceeds without asking again. It then drafts the plan and clarifies the spend ceiling before generation.
 4. Review the shot plan and prompts. The producer audits the live controls and asks for approval before generation.
 5. Review each generated clip before assembly and export.
 
