@@ -8,13 +8,14 @@ Create original mini dramas in VideoExpress with locked characters, dialogue, sc
 
 ## Start here
 
-1. Sign in to VideoExpress in a dedicated browser tab.
+1. Sign in to VideoExpress in your chosen browser.
 2. Copy [SYSTEM_PROMPT.md](SYSTEM_PROMPT.md) into a Claude or ChatGPT session with browser tools.
-3. The producer first asks for your story idea and waits for your answer. Share a sentence or two, optionally including characters, setting and tone. If you already supplied an idea, it proceeds without asking again. It then drafts the plan and clarifies the spend ceiling before generation.
-4. Review the shot plan and prompts. The producer audits the live controls and asks for approval before generation.
-5. Review each generated clip before assembly and export.
+3. Answer the producer's story-idea question, unless you already supplied an idea.
+4. The producer develops the story, generates and inspects each starting image, animates that exact image, reviews the clips, assembles, saves and exports within the prompt's operation limits.
 
-The default prompt makes **four shots, 24–32 seconds, 16:9**. The thumbnail illustrates the separate **nine-shot, 45-second** Hold the Line variants. Those variants are example packs, not the default prompt's output specification.
+The current prompt produces **four shots, 24–32 seconds, 9:16 vertical**, using an image-first workflow. It does not require a separate audit or routine per-stage approvals. It allows up to eight image submissions and eight video submissions total, with at most two video attempts per shot. Actual tool permission requirements still apply.
+
+The thumbnail illustrates the separate **nine-shot, 45-second** Hold the Line examples. Example packs and the optional CLI preserve historical contracts and are not the current prompt's default production specification.
 
 ## Files
 
@@ -47,9 +48,9 @@ The CLI plans locally with no spend; its real provider adapter is disabled. `jso
 
 The supplied run report records three Hold the Line pilots generated and exported on 2026-10-23. Only first frames were checked; **motion, dialogue and lip-sync rubric QA are unfinished**. This repository publication did not rerun generation or inspect those output videos. Output videos are not bundled.
 
-The exact model label and credit cost were not visible in the reported UI. The default prompt records a hidden vendor model as unknown and uses the live workflow. Exact-model requests still pause generation if unverified. Hidden prices require explicit bounded operation-count approval; they are never treated as free. Prompt constraints do not guarantee stable identities, props or voices.
+The exact model label and credit cost were not visible in the reported UI. The default prompt records a hidden vendor model as unknown and uses the live workflow. Exact-model requests still pause generation if unverified. Hidden prices are unknown, never free; the prompt specifies operation limits and respects any stricter user budget. Prompt constraints do not guarantee stable identities, props or voices.
 
-Example projects are templates: previous approvals do not authorize new generations. Reconfirm references, model, costs and approvals for each run. Keep private media, credentials and signed download links out of Git. Leave public-gallery sharing off unless separately requested.
+Example projects are historical templates. Follow SYSTEM_PROMPT.md for the current browser workflow; the optional CLI retains its explicit approval records. Keep private media, credentials and signed download links out of Git. Leave public-gallery sharing off unless separately requested.
 
 ## Browser startup (v0.3)
 
